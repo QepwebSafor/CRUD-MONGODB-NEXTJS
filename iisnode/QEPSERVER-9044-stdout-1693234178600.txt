@@ -1,0 +1,2 @@
+- info Loaded env from C:\Users\Quica\CRUD_MongoDB0\.env.local
+> Ready on http://localhost:\\.\pipe\2da0b633-b643-4dfd-ae3c-88383ceb4e0d

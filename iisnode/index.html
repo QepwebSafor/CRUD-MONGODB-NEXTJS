@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>iisnode logs</title>
+    <style type="text/css">
+        body
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid lightgray;
+            padding: 3px 7px 2px 7px;
+        }
+        th
+        {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: Gray;
+            color: #ffffff;
+        }
+        td.stderr
+        {
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <table id="logFilesTable">
+        <tr>
+            <th>
+                Computer name
+            </th>
+            <th>
+                PID
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Created
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </table>
+    <p id="lastUpdated"></p>
+    <script type="text/javascript">
+
+        // this is replaced with actual data at runtime by code in interceptor.js
+        var logFiles = [{"file":"QEPSERVER-10796-stderr-1693230653666.txt","computername":"QEPSERVER","pid":10796,"type":"stderr","created":1693230653666},{"file":"QEPSERVER-10796-stdout-1693230653663.txt","computername":"QEPSERVER","pid":10796,"type":"stdout","created":1693230653663},{"file":"QEPSERVER-11656-stderr-1693233791327.txt","computername":"QEPSERVER","pid":11656,"type":"stderr","created":1693233791327},{"file":"QEPSERVER-11656-stdout-1693233791324.txt","computername":"QEPSERVER","pid":11656,"type":"stdout","created":1693233791324},{"file":"QEPSERVER-2572-stderr-1693234903050.txt","computername":"QEPSERVER","pid":2572,"type":"stderr","created":1693234903050},{"file":"QEPSERVER-2572-stdout-1693234903044.txt","computername":"QEPSERVER","pid":2572,"type":"stdout","created":1693234903044},{"file":"QEPSERVER-3264-stderr-1693234399878.txt","computername":"QEPSERVER","pid":3264,"type":"stderr","created":1693234399878},{"file":"QEPSERVER-3264-stdout-1693234399875.txt","computername":"QEPSERVER","pid":3264,"type":"stdout","created":1693234399875},{"file":"QEPSERVER-7532-stderr-1693235650730.txt","computername":"QEPSERVER","pid":7532,"type":"stderr","created":1693235650730},{"file":"QEPSERVER-7532-stdout-1693235650726.txt","computername":"QEPSERVER","pid":7532,"type":"stdout","created":1693235650726},{"file":"QEPSERVER-7852-stderr-1693230537691.txt","computername":"QEPSERVER","pid":7852,"type":"stderr","created":1693230537691},{"file":"QEPSERVER-7852-stdout-1693230537688.txt","computername":"QEPSERVER","pid":7852,"type":"stdout","created":1693230537688},{"file":"QEPSERVER-7996-stderr-1693230515505.txt","computername":"QEPSERVER","pid":7996,"type":"stderr","created":1693230515505},{"file":"QEPSERVER-7996-stdout-1693230515503.txt","computername":"QEPSERVER","pid":7996,"type":"stdout","created":1693230515503},{"file":"QEPSERVER-9012-stderr-1693230879798.txt","computername":"QEPSERVER","pid":9012,"type":"stderr","created":1693230879798},{"file":"QEPSERVER-9012-stdout-1693230879791.txt","computername":"QEPSERVER","pid":9012,"type":"stdout","created":1693230879791},{"file":"QEPSERVER-9044-stderr-1693234178603.txt","computername":"QEPSERVER","pid":9044,"type":"stderr","created":1693234178603},{"file":"QEPSERVER-9044-stdout-1693234178600.txt","computername":"QEPSERVER","pid":9044,"type":"stdout","created":1693234178600},{"file":"QEPSERVER-9280-stderr-1693234289224.txt","computername":"QEPSERVER","pid":9280,"type":"stderr","created":1693234289224},{"file":"QEPSERVER-9280-stdout-1693234289220.txt","computername":"QEPSERVER","pid":9280,"type":"stdout","created":1693234289220},{"file":"QEPSERVER-9988-stderr-1693230545246.txt","computername":"QEPSERVER","pid":9988,"type":"stderr","created":1693230545246},{"file":"QEPSERVER-9988-stdout-1693230545243.txt","computername":"QEPSERVER","pid":9988,"type":"stdout","created":1693230545243}];
+        var lastUpdated = 1693235650810;
+        var date = new Date();
+
+        date.setTime(lastUpdated);
+        document.getElementById('lastUpdated').innerHTML = 'Index was last updated ' + date;
+
+        logFiles.sort(function (a, b) {
+            return b.created - a.created;
+        });
+
+        var logFilesTable = document.getElementById("logFilesTable");
+        for (var i = 0; i < logFiles.length; i++) {
+            var logFile = logFiles[i];
+            date.setTime(logFile.created);
+            var row = logFilesTable.insertRow(-1);
+            var computerNameCell = row.insertCell(0);
+            var pidCell = row.insertCell(1);
+            var typeCell = row.insertCell(2);
+            var dateCell = row.insertCell(3);
+            var logCell = row.insertCell(4);
+            computerNameCell.innerHTML = logFile.computername;
+            pidCell.innerHTML = logFile.pid.toString();
+            typeCell.innerHTML = logFile.type;
+            typeCell.setAttribute('class', logFile.type);
+            dateCell.innerHTML = date.toString();
+            logCell.innerHTML = '<a href="' + logFile.file + '">log</a>';
+        };
+
+    </script>
+</body>
+</html>

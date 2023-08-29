@@ -1,0 +1,77 @@
+(node:9012) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Error occurred handling /api/topics Error: Cannot find module 'C:\Users\Quica\CRUD_MongoDB0\.next\prerender-manifest.json'
+Require stack:
+- C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next-server.js
+- C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next.js
+- C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\lib\render-server.js
+- C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\compiled\jest-worker\processChild.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1077:15)
+    at C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\require-hook.js:189:36
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at NextNodeServer.getPrerenderManifest (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next-server.js:1927:26)
+    at new Server (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\base-server.js:170:32)
+    at new NextNodeServer (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next-server.js:173:9)
+    at NextServer.createServer (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next.js:179:24)
+    at async C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next.js:200:31 {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\Quica\\CRUD_MongoDB0\\node_modules\\next\\dist\\server\\next-server.js',
+    'C:\\Users\\Quica\\CRUD_MongoDB0\\node_modules\\next\\dist\\server\\next.js',
+    'C:\\Users\\Quica\\CRUD_MongoDB0\\node_modules\\next\\dist\\server\\lib\\render-server.js',
+    'C:\\Users\\Quica\\CRUD_MongoDB0\\node_modules\\next\\dist\\compiled\\jest-worker\\processChild.js'
+  ]
+}
+Error occurred handling /api/topics Error: Cannot find module 'C:\Users\Quica\CRUD_MongoDB0\.next\prerender-manifest.json'
+Require stack:
+- C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next-server.js
+- C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next.js
+- C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\lib\render-server.js
+- C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\compiled\jest-worker\processChild.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1077:15)
+    at C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\require-hook.js:189:36
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at NextNodeServer.getPrerenderManifest (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next-server.js:1927:26)
+    at new Server (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\base-server.js:170:32)
+    at new NextNodeServer (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next-server.js:173:9)
+    at NextServer.createServer (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next.js:179:24)
+    at async C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next.js:200:31 {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\Quica\\CRUD_MongoDB0\\node_modules\\next\\dist\\server\\next-server.js',
+    'C:\\Users\\Quica\\CRUD_MongoDB0\\node_modules\\next\\dist\\server\\next.js',
+    'C:\\Users\\Quica\\CRUD_MongoDB0\\node_modules\\next\\dist\\server\\lib\\render-server.js',
+    'C:\\Users\\Quica\\CRUD_MongoDB0\\node_modules\\next\\dist\\compiled\\jest-worker\\processChild.js'
+  ]
+}
+Error occurred handling / Error: Cannot find module 'C:\Users\Quica\CRUD_MongoDB0\.next\prerender-manifest.json'
+Require stack:
+- C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next-server.js
+- C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next.js
+- C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\lib\render-server.js
+- C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\compiled\jest-worker\processChild.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1077:15)
+    at C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\require-hook.js:189:36
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at NextNodeServer.getPrerenderManifest (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next-server.js:1927:26)
+    at new Server (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\base-server.js:170:32)
+    at new NextNodeServer (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next-server.js:173:9)
+    at NextServer.createServer (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next.js:179:24)
+    at async C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next.js:200:31 {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\Quica\\CRUD_MongoDB0\\node_modules\\next\\dist\\server\\next-server.js',
+    'C:\\Users\\Quica\\CRUD_MongoDB0\\node_modules\\next\\dist\\server\\next.js',
+    'C:\\Users\\Quica\\CRUD_MongoDB0\\node_modules\\next\\dist\\server\\lib\\render-server.js',
+    'C:\\Users\\Quica\\CRUD_MongoDB0\\node_modules\\next\\dist\\compiled\\jest-worker\\processChild.js'
+  ]
+}

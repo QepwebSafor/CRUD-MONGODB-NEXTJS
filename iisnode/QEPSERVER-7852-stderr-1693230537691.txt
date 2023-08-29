@@ -1,0 +1,11 @@
+(node:7852) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Application has thrown an uncaught exception and is terminated:
+Error: Could not find a production build in the 'C:\Users\Quica\CRUD_MongoDB0\.next' directory. Try building your app with 'next build' before starting the production server. https://nextjs.org/docs/messages/production-start-no-build-id
+    at NextNodeServer.getBuildId (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next-server.js:346:23)
+    at new Server (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\base-server.js:152:29)
+    at new NextNodeServer (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next-server.js:173:9)
+    at NextServer.createServer (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next.js:179:24)
+    at async C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next.js:200:31
+    at async NextServer.prepare (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\next.js:160:24)
+    at async Server.<anonymous> (C:\Users\Quica\CRUD_MongoDB0\node_modules\next\dist\server\lib\render-server.js:124:17)
